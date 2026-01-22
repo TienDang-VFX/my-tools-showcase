@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sipher Engineering | Tooling Showcase</title>
+    <style>
+        :root {
+            --bg-color: #0d0d11;
+            --card-bg: #1a1a23;
+            --primary: #5e6ad2;
+            --accent: #00f2ff;
+            --text-main: #ffffff;
+            --text-sub: #a0a0b0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            padding: 60px 0 40px;
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin: 0 0 10px;
+            background: linear-gradient(90deg, #fff, #a5b4fc);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .subtitle {
+            color: var(--text-sub);
+            font-size: 1.1rem;
+        }
+
+        .tool-card {
+            background: var(--card-bg);
+            border-radius: 16px;
+            overflow: hidden;
+            border: 1px solid rgba(255,255,255,0.05);
+            margin-bottom: 60px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .tool-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0,242,255,0.15);
+        }
+
+        .tool-content {
+            padding: 30px;
+        }
+
+        .tool-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .tool-title {
+            font-size: 1.8rem;
+            margin: 0;
+            color: var(--accent);
+        }
+
+        .tag {
+            background: rgba(94, 106, 210, 0.2);
+            color: #8da2fb;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+
+        .tool-desc {
+            color: var(--text-sub);
+            margin-bottom: 25px;
+        }
+
+        .feature-list {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin-bottom: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .feature-list li {
+            position: relative;
+            padding-left: 20px;
+            font-size: 0.95rem;
+            color: #e2e8f0;
+        }
+
+        .feature-list li::before {
+            content: "•";
+            color: var(--primary);
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+        }
+
+        .video-container {
+            width: 100%;
+            background: #000;
+            position: relative;
+            padding-top: 56.25%; /* 16:9 Aspect Ratio */
+        }
+
+        .video-container video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            background: #000;
+        }
+
+        footer {
+            text-align: center;
+            color: var(--text-sub);
+            padding: 40px 0 60px;
+            font-size: 0.9rem;
+            border-top: 1px solid rgba(255,255,255,0.05);
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 600px) {
+            h1 { font-size: 2rem; }
+            .tool-header { flex-direction: column; align-items: flex-start; gap: 10px; }
+            .feature-list { grid-template-columns: 1fr; }
+            .container { padding: 15px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Engineering Workflow Tools</h1>
+            <p class="subtitle">Optimization & Automation Showcase | Sipher Project</p>
+        </header>
+
+        <!-- Tool 1: Remote Trigger -->
+        <article class="tool-card">
+            <div class="video-container">
+                <!-- IMPORTANT: Rename your video file to remote_trigger.mp4 -->
+                <video controls playsinline poster="">
+                    <source src="remote_trigger.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="tool-content">
+                <div class="tool-header">
+                    <h2 class="tool-title">Remote Automation</h2>
+                    <span class="tag">Next-Gen Ops</span>
+                </div>
+                <p class="tool-desc">
+                    Hệ thống điều khiển máy trạm từ xa thông qua Mobile Web Interface. Giải quyết vấn đề "Downtime" buổi sáng và hỗ trợ test game mọi lúc mọi nơi.
+                </p>
+                <ul class="feature-list">
+                    <li>Mobile Command Center (Tailscale Network)</li>
+                    <li>Tự động hóa 100% (Pull, Compile, Open Editor)</li>
+                    <li>Hot-loading Level & Auto-Play</li>
+                    <li>Real-time Log Monitoring</li>
+                </ul>
+            </div>
+        </article>
+
+        <!-- Tool 2: VFX Composer -->
+        <article class="tool-card">
+            <div class="video-container">
+                <!-- IMPORTANT: Rename your video file to vfx_composer.mp4 -->
+                <video controls playsinline poster="">
+                    <source src="vfx_composer.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="tool-content">
+                <div class="tool-header">
+                    <h2 class="tool-title">Sipher VFX Composer</h2>
+                    <span class="tag">UE5 Plugin Tool</span>
+                </div>
+                <p class="tool-desc">
+                    Công cụ tối ưu hóa quy trình làm VFX trong Unreal Engine. Giảm thiểu thao tác lặp lại, giúp Artist tập trung vào sáng tạo thay vì kỹ thuật.
+                </p>
+                <ul class="feature-list">
+                    <li>Modular Composition (LEGO-style setup)</li>
+                    <li>Smart Library & Live Preview</li>
+                    <li>Simplified Parameter Interface</li>
+                    <li>Giảm 90% thời gian setup System mới</li>
+                </ul>
+            </div>
+        </article>
+
+        <footer>
+            <p>Developed for internal workflow optimization.</p>
+        </footer>
+    </div>
+
+</body>
+</html>
