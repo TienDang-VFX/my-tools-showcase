@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -33,7 +34,7 @@
         header {
             text-align: center;
             padding: 60px 0 40px;
-            border-bottom: 1px solid rgba(255,255,255,0.05);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
             margin-bottom: 40px;
         }
 
@@ -54,15 +55,15 @@
             background: var(--card-bg);
             border-radius: 16px;
             overflow: hidden;
-            border: 1px solid rgba(255,255,255,0.05);
+            border: 1px solid rgba(255, 255, 255, 0.05);
             margin-bottom: 60px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
         .tool-card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 15px 40px rgba(0,242,255,0.15);
+            box-shadow: 0 15px 40px rgba(0, 242, 255, 0.15);
         }
 
         .tool-content {
@@ -124,7 +125,8 @@
             width: 100%;
             background: #000;
             position: relative;
-            padding-top: 56.25%; /* 16:9 Aspect Ratio */
+            padding-top: 56.25%;
+            /* 16:9 Aspect Ratio */
         }
 
         .video-container video {
@@ -142,18 +144,32 @@
             color: var(--text-sub);
             padding: 40px 0 60px;
             font-size: 0.9rem;
-            border-top: 1px solid rgba(255,255,255,0.05);
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
         }
 
         /* Mobile Responsive */
         @media (max-width: 600px) {
-            h1 { font-size: 2rem; }
-            .tool-header { flex-direction: column; align-items: flex-start; gap: 10px; }
-            .feature-list { grid-template-columns: 1fr; }
-            .container { padding: 15px; }
+            h1 {
+                font-size: 2rem;
+            }
+
+            .tool-header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 10px;
+            }
+
+            .feature-list {
+                grid-template-columns: 1fr;
+            }
+
+            .container {
+                padding: 15px;
+            }
         }
     </style>
 </head>
+
 <body>
 
     <div class="container">
@@ -177,7 +193,8 @@
                     <span class="tag">Next-Gen Ops</span>
                 </div>
                 <p class="tool-desc">
-                    Hệ thống điều khiển máy trạm từ xa thông qua Mobile Web Interface. Giải quyết vấn đề "Downtime" buổi sáng và hỗ trợ test game mọi lúc mọi nơi.
+                    Hệ thống điều khiển máy trạm từ xa thông qua Mobile Web Interface. Giải quyết vấn đề "Downtime" buổi
+                    sáng và hỗ trợ test game mọi lúc mọi nơi.
                 </p>
                 <ul class="feature-list">
                     <li>Mobile Command Center (Tailscale Network)</li>
@@ -203,7 +220,8 @@
                     <span class="tag">UE5 Plugin Tool</span>
                 </div>
                 <p class="tool-desc">
-                    Công cụ tối ưu hóa quy trình làm VFX trong Unreal Engine. Giảm thiểu thao tác lặp lại, giúp Artist tập trung vào sáng tạo thay vì kỹ thuật.
+                    Công cụ tối ưu hóa quy trình làm VFX trong Unreal Engine. Giảm thiểu thao tác lặp lại, giúp Artist
+                    tập trung vào sáng tạo thay vì kỹ thuật.
                 </p>
                 <ul class="feature-list">
                     <li>Modular Composition (LEGO-style setup)</li>
@@ -219,7 +237,7 @@
             <div class="video-container">
                 <!-- IMPORTANT: Rename your video file to eagle_tool.mp4 -->
                 <video controls playsinline poster="">
-                    <source src="eagle_tool.mp4" type="video/mp4">
+                    <source src="eagle_tool.mp4.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
             </div>
@@ -229,7 +247,8 @@
                     <span class="tag">Asset Management</span>
                 </div>
                 <p class="tool-desc">
-                    Hệ thống quản lý tài nguyên tập trung (Centralized Asset Library) cho team VFX. Giải pháp thay thế việc quản lý file truyền thống, giúp Artist tìm kiếm ý tưởng và Reference nhanh gấp 5 lần.
+                    Hệ thống quản lý tài nguyên tập trung (Centralized Asset Library) cho team VFX. Giải pháp thay thế
+                    việc quản lý file truyền thống, giúp Artist tìm kiếm ý tưởng và Reference nhanh gấp 5 lần.
                 </p>
                 <ul class="feature-list">
                     <li>Centralized Database (Sync qua mạng nội bộ)</li>
@@ -246,4 +265,5 @@
     </div>
 
 </body>
+
 </html>
